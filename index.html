@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbag Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sandbag Wall Calculator</h1>
+        <p>Calculate the number of sandbags needed to build a sand wall for flood prevention.</p>
+        <form id="sandbagForm">
+            <div class="input-group">
+                <label for="height">Height of Wall (ft):</label>
+                <input type="number" id="height" name="height" min="0" step="0.1" required>
+            </div>
+            <div class="input-group">
+                <label for="length">Length of Wall (m):</label>
+                <input type="number" id="length" name="length" min="0" step="0.1" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+        <div class="notes">
+            <h2>Notes:</h2>
+            <ul>
+                <li>Only fill each bag two-thirds of the way.</li>
+                <li>The base layer should be a minimum of 4 bags wide, overlapping the sides slightly.</li>
+                <li>Make a pyramid, so each layer has 1 less row.</li>
+                <li>A 10-meter long wall, 2 feet high, would require approximately 360 bags.</li>
+                <li>This tool assumes bags are 14" x 26".</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
