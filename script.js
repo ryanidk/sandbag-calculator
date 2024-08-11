@@ -1,7 +1,7 @@
 document.getElementById('sandbagForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const height = parseFloat(document.getElementById('height').value);
+    const height = parseFloat(document.getElementById('height').value) * 3.280839895;
     const length = parseFloat(document.getElementById('length').value);
 
     if (isNaN(height) || isNaN(length)) {
