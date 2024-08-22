@@ -1,35 +1,62 @@
-body {
+/* General styles */
+html, body {
     font-family: 'Inter', sans-serif;
     background-color: #f7f9fc;
     color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 100%; /* Ensure the body takes full height */
+    overflow: auto; /* Allow scrolling */
 }
 
+/* Container styles */
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 100%;
+    width: 80%;
+    margin: 20px auto; /* Center the container with auto margin */
     text-align: center;
 }
 
+/* Logo container */
+.logoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows logos to wrap on small screens */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+/* Logo styles */
+#mergeLogo, #wcdrLogo {
+    height: auto;
+}
+#wcdrLogo {
+    max-width: 50%;
+}
+#mergeLogo {
+    max-width: 20%;
+
+}
+
+/* Heading styles */
 h1 {
     font-weight: 600;
     color: #663399;
+    margin-top: 0; /* Ensure no extra space at the top */
 }
 
+/* Paragraph styles */
 p {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+/* Input group styles */
 .input-group {
     margin-bottom: 15px;
     text-align: left;
@@ -47,9 +74,10 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    box-sizing: border-box;
 }
 
+/* Button styles */
 button {
     background-color: #663399;
     color: #fff;
@@ -65,12 +93,14 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Result styles */
 #result {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 600;
 }
 
+/* Notes styles */
 .notes {
     margin-top: 30px;
     text-align: left;
@@ -90,39 +120,34 @@ button:hover {
     margin-bottom: 5px;
 }
 
-
+/* Input group div styles */
 .input-group div {
     display: inline-flex;
     align-items: center;
 }
 
 .input-group div label {
-    margin: 0; /* Remove any extra margin */
+    margin: 0;
 }
 
 .input-group div input[type="radio"] {
     margin-right: 3px;
     accent-color: #663399;
 }
+
 .input-group div label {
-    margin-right: 30px; /* Small margin to control space between radio and label */
+    margin-right: 30px;
 }
 
+/* Credits styles */
 .credits {
     background-color: #663399;
     padding: 2px;
     color: white;
 }
+
 .credits a {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-}
-
-#mergeLogo {
-    width: 80px;
-    margin-left: 100px;
-}
-#wcdrLogo {
-    width: 200px;
 }
