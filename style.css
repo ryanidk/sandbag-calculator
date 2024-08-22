@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-weight: 600;
-    color: #007bff;
+    color: #663399;
 }
 
 p {
@@ -51,7 +51,7 @@ input {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #663399;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -101,10 +101,28 @@ button:hover {
 }
 
 .input-group div input[type="radio"] {
-    margin-right: 3px; /* Small margin to control space between radio and label */
+    margin-right: 3px;
+    accent-color: #663399;
 }
 .input-group div label {
     margin-right: 30px; /* Small margin to control space between radio and label */
 }
 
+.credits {
+    background-color: #663399;
+    padding: 2px;
+    color: white;
+}
+.credits a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
 
+#mergeLogo {
+    width: 80px;
+    margin-left: 100px;
+}
+#wcdrLogo {
+    width: 200px;
+}
